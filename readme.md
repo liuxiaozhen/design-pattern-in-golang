@@ -1,7 +1,8 @@
-# design-pattern-in-golang
-## 什么是设计模式
-
-## 设计模式的六大原则
+# design-pattern-in-golang #
+## 什么是设计模式 ##
+设计模式是一套被反复使用、多数人知晓的、经过分类的代码设计经验的最佳实践。使用设计模式的目的：为了代码的可重用，提高代码可理解性和保证代码的可靠性。
+设计模式使代码编写真正工程化。项目中合理地运用设计模式可以完美地解决很多问题，每种模式在现实中都有相应的原理来与之对应，每种模式都描述了一个在我们周围不断重复发生的问题，以及该问题的核心解决方案，这也是设计模式能被广泛应用的原因。
+## 设计模式的六大原则 ##
 - **开闭原则**（Open Close Principle）
 开闭原则的意思是：对扩展开放，对修改关闭。在程序需要进行拓展的时候，不能去修改原有的代码，实现一个热插拔的效果。
 简言之，是为了使程序的扩展性好，易于维护和升级。想要达到这样的效果，我们需要使用接口和抽象类，后面的具体设计中我们会提到这点。
@@ -20,3 +21,36 @@ LSP是继承复用的基石，只有当派生类可以替换掉基类，且软�
 最少知道原则是指：一个实体应当尽量少地与其他实体之间发生相互作用，使得系统功能模块相对独立。
 - **合成复用原则**（Composite Reuse Principle）
 合成复用原则是指：尽量使用合成/聚合的方式，而不是使用继承。
+
+## 设计模式的分类 ##
+### 创建型模式 ###
+
+- 工厂模式（Factory Pattern）
+- 抽象工厂模式（Abstract Factory Pattern）
+- 单例模式（Singleton Pattern）
+- 建造者模式（Builder Pattern）
+- 原型模式（Prototype Pattern）
+
+### 结构型模式 ###
+- 适配器模式（Adapter Pattern）
+- 桥接模式（Bridge Pattern）
+- 过滤器模式（Filter、Criteria Pattern）
+- 组合模式（Composite Pattern）
+- 装饰器模式（Decorator Pattern）
+- 外观模式（Facade Pattern）
+- 享元模式（Flyweight Pattern）
+- 代理模式（Proxy Pattern）
+
+### 行为型模式 ###
+- 责任链模式（Chain of Responsibility Pattern）
+- 命令模式（Command Pattern）
+- 解释器模式（Interpreter Pattern）
+- 迭代器模式（Iterator Pattern）
+- 中介者模式（Mediator Pattern）
+- 备忘录模式（Memento Pattern）
+- 观察者模式（Observer Pattern）
+- 状态模式（State Pattern）
+- 空对象模式（Null Object Pattern）
+- 策略模式（Strategy Pattern）
+- 模板模式（Template Pattern）
+- 访问者模式（Visitor Pattern）
