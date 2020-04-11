@@ -20,6 +20,6 @@ func (m *PrototypeManager) Set(proName string, v Cloneable) {
 	m.pMap[proName] = v
 }
 
-func (m *PrototypeManager) Get(proName sring) Cloneable {
+func (m *PrototypeManager) Get(proName string) Cloneable {
 	return m.pMap[proName].Clone()
 }

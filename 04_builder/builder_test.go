@@ -4,16 +4,16 @@ import (
 	"testing"
 )
 
-var expertA = "sprite|chicken wing|big Mac"
-var expertB = "cola|chips|McChicken"
+var expectA = "sprite|chicken wing|big Mac"
+var expectB = "cola|chips|McChicken"
 
 func Test_builderA(t *testing.T) {
 	builder := &ConcreteBuilderA{}
 	director := NewDirector(builder)
 	director.Construct()
 	product := builder.GetProduct()
-	if product != expertA {
-		t.Fatalf("error||expert=%v||valule=%v", expertA, product)
+	if product != expectA {
+		t.Fatalf("error||expert=%v||valule=%v", expectA, product)
 	}
 	//output
 	//sprite|chicken wing|big Mac
@@ -25,8 +25,8 @@ func Test_builderB(t *testing.T) {
 	director := NewDirector(builder)
 	director.Construct()
 	product := builder.GetProduct()
-	if product != expertB {
-		t.Fatalf("error||expert=%v||valule=%v", expertB, product)
+	if product != expectB {
+		t.Fatalf("error||expert=%v||valule=%v", expectB, product)
 	}
 	//output
 	//cola|chips|McChicken

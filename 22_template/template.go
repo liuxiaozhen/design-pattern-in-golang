@@ -9,13 +9,13 @@ type Game interface {
 }
 
 type GameTemplate struct {
-	g Game
+	Game
 }
 
 func (gt *GameTemplate) play() {
-	gt.g.initialize()
-	gt.g.startPlay()
-	gt.g.endPlay()
+	gt.initialize()
+	gt.startPlay()
+	gt.endPlay()
 }
 
 type Tennis struct {
